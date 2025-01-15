@@ -1,0 +1,43 @@
+<div class="bg-gray-900 p-12 rounded-3xl shadow-2xl max-w-6xl mx-auto">
+  <h2 class="text-5xl font-bold text-center text-white mb-8">Student Dashboard</h2>
+  <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+    <!-- Header -->
+    <div class="text-center">
+      <h1 class="text-3xl font-semibold text-white">Welcome, {{ student.fullName }}!</h1>
+      <p class="text-lg text-gray-400 mt-2">Your Dashboard Overview</p>
+    </div>
+
+    <!-- Profile Info Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div class="bg-indigo-700 p-6 rounded-xl shadow-lg">
+        <p class="text-sm text-gray-200">Matric Number</p>
+        <p class="font-semibold text-white">{{ student.matricNo }}</p>
+      </div>
+      <div class="bg-indigo-700 p-6 rounded-xl shadow-lg">
+        <p class="text-sm text-gray-200">Library ID</p>
+        <p class="font-semibold text-white">{{ student.libraryID }}</p>
+      </div>
+      <div class="bg-indigo-700 p-6 rounded-xl shadow-lg">
+        <p class="text-sm text-gray-200">Email</p>
+        <p class="font-semibold text-white">{{ student.email }}</p>
+      </div>
+      <div class="bg-indigo-700 p-6 rounded-xl shadow-lg">
+        <p class="text-sm text-gray-200">Department</p>
+        <p class="font-semibold text-white">{{ student.department }}</p>
+      </div>
+      <div class="bg-indigo-700 p-6 rounded-xl shadow-lg">
+        <p class="text-sm text-gray-200">Level</p>
+        <p class="font-semibold text-white">{{ student.level }}</p>
+      </div>
+      <div class="bg-indigo-700 p-6 rounded-xl shadow-lg">
+        <p class="text-sm text-gray-200">Phone</p>
+        <p class="font-semibold text-white">{{ student.phone }}</p>
+      </div>
+    </div>
+
+    <!-- Edit Profile Button -->
+    <div class="text-center mt-8">
+      <button class="py-3 px-8 bg-indigo-500 text-white text-lg font-semibold rounded-full hover:bg-indigo-600 transition duration-200">Edit Profile</button>
+    </div>
+  </div>
+</div>
